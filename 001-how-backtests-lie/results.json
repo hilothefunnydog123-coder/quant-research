@@ -1,0 +1,26 @@
+{
+  "lookahead": {
+    "SMA crossover": {
+      "honest_sharpe": 0.1159183820104862,
+      "cheat_sharpe": 0.18969907211186807,
+      "inflation": 0.07378069010138187
+    },
+    "Momentum": {
+      "honest_sharpe": 0.11704216438750856,
+      "cheat_sharpe": 1.2408170827222689,
+      "inflation": 1.1237749183347603
+    },
+    "Mean reversion": {
+      "honest_sharpe": 0.16413697452714485,
+      "cheat_sharpe": -2.0849428196431363,
+      "inflation": -2.249079794170281
+    }
+  },
+  "data_snooping": {
+    "n_strategies_tried": 337,
+    "best_in_sample_sharpe": 0.766,
+    "best_out_of_sample_sharpe": -0.539,
+    "best_strategy": "sma",
+    "single_strategy_mean_sharpe": -0.118
+  }
+}
