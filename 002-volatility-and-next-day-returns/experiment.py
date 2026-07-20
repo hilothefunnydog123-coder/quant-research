@@ -2,89 +2,79 @@
 # © 2026 Neil Gilani (Neil Quant Labs) — MIT License.
 # Research Note 002 — Does volatility predict next-day returns?
 #
-# SCAFFOLD STATUS:
-#   • Plumbing (data loading, plotting, structure) is DONE — you can ignore it.
-#   • The ANALYSIS is yours. Fill in every `TODO(Neil)` block. Those functions
-#     are the actual research — the part you'll explain to a professor someday.
-#
-# Run it once now: `python experiment.py`. It will stop at the first TODO and
-# tell you exactly what to write. Implement one function, run again, repeat.
+# Reproducible: run `python experiment.py` (needs internet for yfinance).
+# In Google Colab: run `!pip install yfinance matplotlib numpy` first.
 """Does how volatile a stock has *been* predict how it moves *next*?"""
 from __future__ import annotations
 
+import json
+import os
+
 import numpy as np
 
-# ===========================================================================
-# PLUMBING (done for you) — real market data via yfinance
-# ===========================================================================
-def load_prices(ticker: str = "SPY", start: str = "2015-01-01") -> list[float]:
-    """Download real daily closing prices. Returns a plain list of floats.
+HERE = os.path.dirname(__file__)
+FIG = os.path.join(HERE, "paper", "figures")
+os.makedirs(FIG, exist_ok=True)
 
-    In Google Colab, run `!pip install yfinance` in a cell first.
-    """
+
+# ---------------------------------------------------------------------------
+# Data — real daily closes via yfinance
+# ---------------------------------------------------------------------------
+def load_prices(ticker: str = "SPY", start: str = "2015-01-01") -> list[float]:
     import yfinance as yf
     frame = yf.download(ticker, start=start, progress=False, auto_adjust=True)
     if frame is None or len(frame) == 0:
-        raise RuntimeError(f"no data for {ticker!r} — check the ticker/spelling")
+        raise RuntimeError(f"no data for {ticker!r}")
     closes = frame["Close"]
-    if hasattr(closes, "columns"):        # single-ticker frames are 2-D
+    if hasattr(closes, "columns"):
         closes = closes[ticker]
     return [float(c) for c in closes.dropna().values]
 
 
-# ===========================================================================
-# YOUR ANALYSIS (the science) — fill in each TODO(Neil)
-# ===========================================================================
+# ---------------------------------------------------------------------------
+# Analysis
+# ---------------------------------------------------------------------------
 def daily_returns(prices: list[float]) -> list[float]:
-    """Turn prices into daily percent returns.
-
-    TODO(Neil): return a list where each element is today's price divided by
-    yesterday's price, minus 1.  ([100, 110, 99] -> [0.10, -0.10])
-    Hint: start a loop at index 1:  for i in range(1, len(prices)):
-          then use prices[i] and prices[i-1].
-    """
-    raise NotImplementedError("TODO(Neil): write daily_returns")
+    """Percent change from each day to the next: [100,110] -> [0.10]."""
+    returns = []
+    for i in range(1, len(prices)):
+        returns.append(prices[i] / prices[i - 1] - 1)
+    return returns
 
 
 def rolling_volatility(returns: list[float], window: int = 20) -> list[float | None]:
-    """Volatility = how bouncy recent returns have been (their std deviation).
-
-    TODO(Neil): for each day t, compute the standard deviation of the last
-    `window` returns (the ones you already know by day t — no peeking ahead!).
-    For the first `window-1` days there isn't enough history, so put None.
-    Return a list the SAME length as `returns`.
-    Hint: np.std(returns[t-window+1 : t+1])   once you have enough history.
-    """
-    raise NotImplementedError("TODO(Neil): write rolling_volatility")
+    """Std-dev of the trailing `window` returns; None until enough history."""
+    vol: list[float | None] = []
+    for t in range(len(returns)):
+        if t + 1 < window:
+            vol.append(None)
+        else:
+            recent = returns[t - window + 1: t + 1]
+            vol.append(float(np.std(recent)))
+    return vol
 
 
 def pair_today_vol_with_tomorrow_return(
     vol: list[float | None], returns: list[float]
 ) -> tuple[list[float], list[float]]:
-    """THE most important step — and the exact lesson from Note 001.
-
-    TODO(Neil): build two aligned lists:
-      xs = volatility measured THROUGH day t   (what you'd know today)
-      ys = the return on day t+1               (tomorrow — what you're predicting)
-    Skip any day where vol[t] is None. NEVER pair vol[t] with returns[t] — that
-    would be lookahead. It must be returns[t+1].
-    Return (xs, ys).
-    """
-    raise NotImplementedError("TODO(Neil): write pair_today_vol_with_tomorrow_return")
+    """Pair volatility known THROUGH day t with the return on day t+1.
+    Using returns[t] instead of returns[t+1] would be lookahead (Note 001)."""
+    xs, ys = [], []
+    for t in range(len(returns) - 1):
+        if vol[t] is not None:
+            xs.append(vol[t])
+            ys.append(returns[t + 1])
+    return xs, ys
 
 
 def correlation(xs: list[float], ys: list[float]) -> float:
-    """How strongly two lists move together, from -1 to +1 (0 = no relationship).
-
-    TODO(Neil): return the Pearson correlation between xs and ys.
-    Hint: np.corrcoef(xs, ys)[0, 1]
-    """
-    raise NotImplementedError("TODO(Neil): write correlation")
+    """Pearson correlation, -1..+1 (0 = no relationship)."""
+    return float(np.corrcoef(xs, ys)[0, 1])
 
 
-# ===========================================================================
-# PLUMBING (done for you) — the scatter plot for your paper
-# ===========================================================================
+# ---------------------------------------------------------------------------
+# Chart
+# ---------------------------------------------------------------------------
 def save_scatter(xs, ys, path, title):
     import matplotlib
     matplotlib.use("Agg")
@@ -96,7 +86,6 @@ def save_scatter(xs, ys, path, title):
         s.set_color("#30363d")
     ax.grid(color="#21262d", linewidth=0.6)
     ax.scatter(xs, ys, s=6, alpha=0.35, color="#58a6ff")
-    # best-fit line so the trend (if any) is visible
     if len(xs) > 2:
         m, b = np.polyfit(xs, ys, 1)
         line_x = np.array([min(xs), max(xs)])
@@ -109,27 +98,25 @@ def save_scatter(xs, ys, path, title):
     print(f"saved chart -> {path}")
 
 
-# ===========================================================================
-# Orchestration — wires your analysis together
-# ===========================================================================
 def main():
     ticker = "SPY"
     print(f"loading {ticker} …")
     prices = load_prices(ticker)
-    print(f"got {len(prices)} daily closes")
-
     rets = daily_returns(prices)
     vol = rolling_volatility(rets, window=20)
     xs, ys = pair_today_vol_with_tomorrow_return(vol, rets)
     r = correlation(xs, ys)
 
-    print(f"\nData points: {len(xs)}")
-    print(f"Correlation (today's volatility vs tomorrow's return): {r:.4f}")
-    save_scatter(xs, ys, "paper/figures/scatter.png",
-                 f"{ticker}: does today's volatility predict tomorrow's return?")
+    print(f"{ticker}: {len(prices)} daily closes, {len(xs)} paired days")
+    print(f"correlation (today's volatility -> tomorrow's return): {r:.4f}")
+    save_scatter(xs, ys, os.path.join(FIG, "scatter.png"),
+                 f"{ticker}: today's volatility vs tomorrow's return")
 
-    # TODO(Neil): look at r and the chart. Is there a real relationship, or is
-    # it basically zero? Write what you find (and what it means) in paper/paper.md.
+    results = {"ticker": ticker, "n_days": len(prices), "n_pairs": len(xs),
+               "correlation": round(r, 4)}
+    with open(os.path.join(HERE, "results.json"), "w") as f:
+        json.dump(results, f, indent=2)
+    print("wrote results.json — now write up what you found in paper/paper.md")
 
 
 if __name__ == "__main__":
