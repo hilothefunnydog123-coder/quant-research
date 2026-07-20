@@ -46,6 +46,10 @@ pick a question  ──▶  form a hypothesis  ──▶  design the experiment
 
 Each note is a self-contained folder: `experiment.py` (reproducible), `paper/paper.md` → `paper.pdf`, `results.json`, and a `README`.
 
+## 🤝 Open to contributors
+
+This is an **open research collective** — anyone can submit a quant research note, and it's published here under **your** name once it passes review. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the submission flow, copy the **[`_template/`](_template/)** folder to start, and open a pull request. Have an idea but not a full note? Open a **[Discussion](../../discussions)** or an Issue. Every submission is peer-reviewed against the [methodology standard](METHODOLOGY.md).
+
 ## Reproduce any note
 
 ```bash
