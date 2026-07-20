@@ -32,7 +32,7 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the full checklist. In short, every e
 |---|---|---|---|
 | **001** | How do backtests overstate performance? | A 1-line lookahead bug inflates momentum's Sharpe by **+1.12**; cherry-picking 337 strategies on random data fakes a **0.77** Sharpe that goes **−0.54** out of sample | [📄 PDF](001-how-backtests-lie/paper/paper.pdf) · [code](001-how-backtests-lie/) |
 | **002** | Does realized volatility predict next-day returns? | Across 2,881 days of SPY, today's volatility → tomorrow's return correlation is **+0.035** (R² ≈ 0.1%, p ≈ 0.06) — **no meaningful directional prediction** | [paper](002-volatility-and-next-day-returns/paper/paper.md) · [code](002-volatility-and-next-day-returns/) |
-| 003 | *Momentum vs. mean reversion across regimes, after costs* | *planned* | — |
+| 003 | Momentum vs. mean reversion across regimes, after costs | *in progress — running on real data* | [code](003-momentum-vs-mean-reversion/) |
 | 004 | *How effective are liquidity-grab / FVG setups, statistically?* | *planned* | — |
 
 ## The pipeline (one note per month)
