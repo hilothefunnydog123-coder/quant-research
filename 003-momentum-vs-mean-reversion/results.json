@@ -1,0 +1,25 @@
+{
+  "ticker": "SPY",
+  "n_days": 4916,
+  "cost_bps_per_side": 1.0,
+  "mom_lookback": 20,
+  "ma_window": 200,
+  "overall": {
+    "buy_hold_sharpe": 0.625,
+    "momentum_gross_sharpe": 0.171,
+    "momentum_net_sharpe": 0.148,
+    "reversion_gross_sharpe": 0.437,
+    "reversion_net_sharpe": 0.307,
+    "momentum_turnover": 0.178,
+    "reversion_turnover": 1.01
+  },
+  "by_regime": {
+    "bull": {"momentum": 0.204, "reversion": -0.254},
+    "bear": {"momentum": 0.173, "reversion": 1.072}
+  },
+  "cost_sensitivity": [
+    {"cost_bps": 0.0, "momentum_sharpe": 0.171, "reversion_sharpe": 0.437},
+    {"cost_bps": 1.0, "momentum_sharpe": 0.148, "reversion_sharpe": 0.307},
+    {"cost_bps": 5.0, "momentum_sharpe": 0.057, "reversion_sharpe": -0.212}
+  ]
+}

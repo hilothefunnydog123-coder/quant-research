@@ -1,8 +1,10 @@
-# Research Note 003 — Momentum vs. Mean Reversion, Across Regimes, After Costs 🚧
+# Research Note 003 — Momentum vs. Mean Reversion, Across Regimes, After Costs
 
-> **Status: analysis engine complete and self-tested; awaiting the real-data run.**
-> The backtest, regime split, cost model, and paper skeleton are done. The
-> **numbers and the finding come from the author running it on real SPY data.**
+> **Status: complete.** Run on 4,916 days of real SPY data (2007–2026). Finding:
+> **neither strategy beats buy-and-hold after costs** (Sharpe 0.63), but each is a
+> regime bet — momentum leads in bull markets, mean reversion earns an after-cost
+> Sharpe of **1.07** in bear markets before its ~6× turnover lets costs erase it.
+> See [`paper/paper.md`](paper/paper.md).
 
 **The question:** Two of the oldest ideas in trading disagree. **Momentum** says
 what's been going up keeps going up (bet on continuation). **Mean reversion** says
