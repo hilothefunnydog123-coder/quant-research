@@ -31,7 +31,7 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the full checklist. In short, every e
 | # | Question | Finding | Paper |
 |---|---|---|---|
 | **001** | How do backtests overstate performance? | A 1-line lookahead bug inflates momentum's Sharpe by **+1.12**; cherry-picking 337 strategies on random data fakes a **0.77** Sharpe that goes **−0.54** out of sample | [📄 PDF](001-how-backtests-lie/paper/paper.pdf) · [code](001-how-backtests-lie/) |
-| 002 | *Does realized volatility predict next-day returns?* | *in progress* | — |
+| 002 | *Does realized volatility predict next-day returns?* | *in progress — analysis being written* | [scaffold](002-volatility-and-next-day-returns/) |
 | 003 | *Momentum vs. mean reversion across regimes, after costs* | *planned* | — |
 | 004 | *How effective are liquidity-grab / FVG setups, statistically?* | *planned* | — |
 
