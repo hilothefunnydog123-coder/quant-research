@@ -56,4 +56,17 @@ python paper/build_pdf.py                            # rebuilds the PDF
 
 ## About
 
-Independent quant research by **hilothefunnydog123-coder**, exploring market microstructure, strategy evaluation, and the statistics of trading — with an emphasis on methodology over hype. Built on [quantsim](https://github.com/hilothefunnydog123-coder/quantsim) and [exchange-simulator](https://github.com/hilothefunnydog123-coder/exchange-simulator).
+Independent quant research by **Neil Gilani** ([@hilothefunnydog123-coder](https://github.com/hilothefunnydog123-coder)), exploring market microstructure, strategy evaluation, and the statistics of trading — with an emphasis on methodology over hype. Built on [quantsim](https://github.com/hilothefunnydog123-coder/quantsim) and [exchange-simulator](https://github.com/hilothefunnydog123-coder/exchange-simulator).
+
+## License & citation
+
+© 2026 **Neil Gilani**. This work is dual-licensed so the terms fit what's being reused:
+
+- **Code** (`experiment.py`, `build_pdf.py`, etc.) — [MIT License](LICENSE). Free to reuse, but the copyright notice must be kept.
+- **Written research** (the papers, text, figures, and findings) — **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**. You may share and build on it, *but you must credit the author.*
+
+If you reference this work, please cite it (GitHub's **"Cite this repository"** button uses [`CITATION.cff`](CITATION.cff)):
+
+> Gilani, N. (2026). *Neil Quant Labs — Quantitative Finance Research.* https://github.com/hilothefunnydog123-coder/quant-research
+
+*The commit history in this repository is a timestamped, public record of authorship.*

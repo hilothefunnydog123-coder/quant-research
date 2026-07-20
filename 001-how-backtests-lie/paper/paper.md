@@ -159,3 +159,9 @@ prevent and expensive to discover after the fact.
 ---
 
 *Reproduce: `pip install "git+https://github.com/hilothefunnydog123-coder/quantsim.git" matplotlib && python experiment.py`*
+
+## How to cite
+
+> Gilani, N. (2026). *How Backtests Lie: Quantifying Lookahead Bias and Data Snooping.* Neil Quant Labs, Research Note 001. https://github.com/hilothefunnydog123-coder/quant-research
+
+© 2026 Neil Gilani. The code in this repository is released under the MIT License. The text, figures, and findings of this research note are licensed **CC BY 4.0** — you may share and build on them, provided you give appropriate credit to the author.
