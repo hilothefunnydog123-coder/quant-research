@@ -14,6 +14,12 @@
 
 Most projects claim to *find* edges. This lab is built on the opposite instinct: **rigorously testing whether claimed edges are real**, and reporting what the data actually says — even when the answer is "it doesn't work." That skepticism is the entire point. A study that honestly concludes "momentum doesn't survive costs" is worth more than a dozen that claim to have beaten the market, because it's the one a serious reader believes.
 
+## 🏛️ The Out-of-Sample Registry
+
+The same instinct, turned into something anyone can contribute to: a **public record of whether trading strategies actually held up** — scored on data that did not exist when they were submitted. You submit a strategy locked at today's date; the engine then evaluates it *only on days that come afterward*, handing it prices one at a time so it can never see the future. It is the honest test a backtest can never be, because the only thing you can't optimise against is time.
+
+**→ [Browse the live scoreboard and submit a strategy](registry/)**
+
 ## The standard (every note follows this)
 
 See [`METHODOLOGY.md`](METHODOLOGY.md) for the full checklist. In short, every experiment must:
