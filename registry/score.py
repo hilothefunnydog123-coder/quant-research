@@ -33,7 +33,10 @@ README = os.path.join(HERE, "README.md")
 TICKER = "SPY"
 COST_PER_TURNOVER = 0.0001       # 1 bp charged on |change in position|
 TRADING_DAYS = 252
+YAHOO = ("https://query1.finance.yahoo.com/v8/finance/chart/"
+         "{sym}?range=15y&interval=1d")
 STOOQ = "https://stooq.com/q/d/l/?s={sym}&i=d"
+UA = {"User-Agent": "Mozilla/5.0 (compatible; NeilQuantLabs/1.0)"}
 
 
 # --------------------------------------------------------------------------- #
@@ -54,18 +57,49 @@ def _parse_csv(text: str) -> tuple[list[str], list[float]]:
     return dates, closes
 
 
+def _fetch_yahoo() -> tuple[list[str], list[float]]:
+    """Daily closes from Yahoo's chart API — the most reliable keyless source on
+    CI runners. Returns (dates, adjusted closes)."""
+    import datetime as dt
+    url = YAHOO.format(sym=TICKER)
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        payload = json.loads(resp.read().decode("utf-8", "replace"))
+    result = payload["chart"]["result"][0]
+    stamps = result["timestamp"]
+    quote = result["indicators"]["quote"][0]
+    adj = result["indicators"].get("adjclose", [{}])[0].get("adjclose")
+    closes_raw = adj if adj else quote["close"]
+    dates, closes = [], []
+    for ts, c in zip(stamps, closes_raw):
+        if c is None:
+            continue
+        dates.append(dt.datetime.utcfromtimestamp(ts).date().isoformat())
+        closes.append(float(c))
+    return dates, closes
+
+
+def _fetch_stooq() -> tuple[list[str], list[float]]:
+    url = STOOQ.format(sym=TICKER.lower() + ".us")
+    req = urllib.request.Request(url, headers=UA)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return _parse_csv(resp.read().decode("utf-8", "replace"))
+
+
 def load_market_data() -> tuple[str, list[str], list[float]]:
-    """Return (source_label, dates, closes). Real SPY if reachable, else sample."""
-    try:
-        url = STOOQ.format(sym=TICKER.lower() + ".us")
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            dates, closes = _parse_csv(resp.read().decode("utf-8", "replace"))
-        if len(closes) < 500:
-            raise RuntimeError(f"stooq returned only {len(closes)} rows")
-        return f"real {TICKER} daily (stooq)", dates, closes
-    except Exception as exc:  # offline, rate-limited, or source down
-        print(f"[data] live fetch failed ({exc}); using bundled sample")
+    """Return (source_label, dates, closes). Real SPY if reachable, else sample.
+    Tries Yahoo, then stooq, then the bundled synthetic sample."""
+    for label, fetch in (("real SPY daily (Yahoo)", _fetch_yahoo),
+                         ("real SPY daily (stooq)", _fetch_stooq)):
+        try:
+            dates, closes = fetch()
+            if len(closes) >= 500:
+                return label, dates, closes
+            print(f"[data] {label}: only {len(closes)} rows, skipping")
+        except Exception as exc:
+            print(f"[data] {label} failed ({exc})")
+    print("[data] all live sources failed; using bundled sample")
+    if True:
         with open(SAMPLE) as f:
             dates, closes = _parse_csv(f.read())
         return "synthetic sample (offline)", dates, closes
