@@ -1,8 +1,11 @@
-# Research Note 004 — Do Liquidity Grabs and Fair Value Gaps Have a Statistical Edge? 🚧
+# Research Note 004 — Do Liquidity Grabs and Fair Value Gaps Have a Statistical Edge?
 
-> **Status: analysis code complete and self-tested; awaiting the real-data run.**
-> Detection, statistics, and the chart are done. The **numbers and the finding
-> come from the author running it on real SPY data** — that's the point.
+> **Status: complete.** Run on 2,903 days of real SPY (2015–2026). Finding: **no
+> edge.** At 1 day nothing is significant; at 5 days the only "significant" results
+> are just the market's drift — and the supposedly *bearish* patterns are followed
+> by the *largest positive* moves, the opposite of the claim. FVGs "fill" 73–88% of
+> the time, but bearish gaps fill *more*, which is what upward drift does, not a
+> magnet. See [`paper/paper.pdf`](paper/paper.pdf).
 
 **The question:** Two chart patterns anchor a huge amount of online trading
 education — the **fair value gap** (a 3-candle price imbalance) and the

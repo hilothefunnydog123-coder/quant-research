@@ -1,0 +1,109 @@
+{
+  "ticker": "SPY",
+  "n_bars": 2903,
+  "lookback": 20,
+  "by_horizon": {
+    "1": {
+      "baseline_mean": 0.00057,
+      "events": [
+        {
+          "label": "Bullish FVG",
+          "bull": true,
+          "n": 687,
+          "mean": 0.00013,
+          "se": 0.0003095238095238095,
+          "t": 0.42,
+          "p": 0.672,
+          "hit_rate": 0.52,
+          "baseline_mean": 0.00057
+        },
+        {
+          "label": "Bearish FVG",
+          "bull": false,
+          "n": 362,
+          "mean": 0.00074,
+          "se": 0.0008043478260869565,
+          "t": 0.92,
+          "p": 0.357,
+          "hit_rate": 0.53,
+          "baseline_mean": 0.00057
+        },
+        {
+          "label": "Liquidity grab (highs)",
+          "bull": false,
+          "n": 159,
+          "mean": 0.00065,
+          "se": 0.0006249999999999999,
+          "t": 1.04,
+          "p": 0.298,
+          "hit_rate": 0.56,
+          "baseline_mean": 0.00057
+        },
+        {
+          "label": "Liquidity grab (lows)",
+          "bull": true,
+          "n": 49,
+          "mean": 0.00016,
+          "se": 0.002285714285714286,
+          "t": 0.07,
+          "p": 0.944,
+          "hit_rate": 0.57,
+          "baseline_mean": 0.00057
+        }
+      ]
+    },
+    "5": {
+      "baseline_mean": 0.00284,
+      "events": [
+        {
+          "label": "Bullish FVG",
+          "bull": true,
+          "n": 687,
+          "mean": 0.00165,
+          "se": 0.0006790123456790123,
+          "t": 2.43,
+          "p": 0.015,
+          "hit_rate": 0.61,
+          "baseline_mean": 0.00284
+        },
+        {
+          "label": "Bearish FVG",
+          "bull": false,
+          "n": 361,
+          "mean": 0.00384,
+          "se": 0.0015609756097560976,
+          "t": 2.46,
+          "p": 0.014,
+          "hit_rate": 0.62,
+          "baseline_mean": 0.00284
+        },
+        {
+          "label": "Liquidity grab (highs)",
+          "bull": false,
+          "n": 159,
+          "mean": 0.00391,
+          "se": 0.0011399416909620992,
+          "t": 3.43,
+          "p": 0.001,
+          "hit_rate": 0.63,
+          "baseline_mean": 0.00284
+        },
+        {
+          "label": "Liquidity grab (lows)",
+          "bull": true,
+          "n": 49,
+          "mean": 0.00305,
+          "se": 0.004295774647887324,
+          "t": 0.71,
+          "p": 0.476,
+          "hit_rate": 0.47,
+          "baseline_mean": 0.00284
+        }
+      ]
+    }
+  },
+  "fill_rate_10d": {
+    "bullish_fvg": 0.73,
+    "bearish_fvg": 0.88
+  }
+}

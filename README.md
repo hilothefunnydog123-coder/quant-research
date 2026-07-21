@@ -39,7 +39,8 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the full checklist. In short, every e
 | **001** | How do backtests overstate performance? | A 1-line lookahead bug inflates momentum's Sharpe by **+1.12**; cherry-picking 337 strategies on random data fakes a **0.77** Sharpe that goes **−0.54** out of sample | [📄 PDF](001-how-backtests-lie/paper/paper.pdf) · [code](001-how-backtests-lie/) |
 | **002** | Does realized volatility predict next-day returns? | Across 2,881 days of SPY, today's volatility → tomorrow's return correlation is **+0.035** (R² ≈ 0.1%, p ≈ 0.06) — **no meaningful directional prediction** | [paper](002-volatility-and-next-day-returns/paper/paper.md) · [code](002-volatility-and-next-day-returns/) |
 | **003** | Momentum vs. mean reversion across regimes, after costs? | Over 4,916 days of SPY, **neither beats buy-and-hold** (Sharpe 0.63) after costs — but each is a regime bet: momentum leads in bull markets, mean reversion earns **1.07** in bear markets, then its ~6× turnover lets 5bp costs turn it **negative** | [📄 PDF](003-momentum-vs-mean-reversion/paper/paper.pdf) · [code](003-momentum-vs-mean-reversion/) |
-| 004 | How effective are liquidity-grab / FVG setups, statistically? | *in progress — running on real data* | [code](004-liquidity-grabs-and-fvg/) |
+| **004** | How effective are liquidity-grab / FVG setups, statistically? | Across 2,903 days of SPY, **no edge**: at 1 day nothing is significant; the 5-day "significant" results are just market drift, and the *bearish* patterns are followed by the *largest positive* moves — the opposite of the claim | [📄 PDF](004-liquidity-grabs-and-fvg/paper/paper.pdf) · [code](004-liquidity-grabs-and-fvg/) |
+| 005 | *Where do SPY's returns actually come from — overnight vs. intraday?* | *planned* | — |
 
 ## The pipeline (one note per month)
 
