@@ -13,10 +13,10 @@
       "oos_start": "2022-01-03",
       "oos_days": 1185,
       "oos_return": -0.0374315027476575,
-      "sharpe": 0.048831979979760694,
+      "sharpe": 0.04883197997976065,
       "max_drawdown": -0.42903930131004364,
       "benchmark_return": -0.03733643087426408,
-      "benchmark_sharpe": 0.04894639407023383,
+      "benchmark_sharpe": 0.0489463940702338,
       "status": "benchmark"
     },
     {
@@ -29,10 +29,10 @@
       "oos_start": "2022-01-03",
       "oos_days": 1185,
       "oos_return": 0.013223989411036419,
-      "sharpe": 0.10746175869885234,
+      "sharpe": 0.10746175869885015,
       "max_drawdown": -0.34534088889422565,
       "benchmark_return": -0.03733643087426408,
-      "benchmark_sharpe": 0.04894639407023383,
+      "benchmark_sharpe": 0.0489463940702338,
       "status": "beat benchmark"
     },
     {
@@ -48,7 +48,7 @@
       "sharpe": 0.30141566667925246,
       "max_drawdown": -0.38970354784242,
       "benchmark_return": -0.03733643087426408,
-      "benchmark_sharpe": 0.04894639407023383,
+      "benchmark_sharpe": 0.0489463940702338,
       "status": "beat benchmark"
     },
     {
@@ -61,10 +61,10 @@
       "oos_start": "2022-01-03",
       "oos_days": 1185,
       "oos_return": 0.9100114351831914,
-      "sharpe": 0.8363264608560597,
+      "sharpe": 0.8363264608560591,
       "max_drawdown": -0.19439219609379388,
       "benchmark_return": -0.03733643087426408,
-      "benchmark_sharpe": 0.04894639407023383,
+      "benchmark_sharpe": 0.0489463940702338,
       "status": "beat benchmark"
     }
   ]
