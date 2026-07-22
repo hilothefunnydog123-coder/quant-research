@@ -1,4 +1,4 @@
-# Contributing to Neil Quant Labs
+# Contributing to Martingale
 
 This is an **open quant research collective**. Anyone may submit a research note
 — a reproducible experiment answering a specific question in quantitative

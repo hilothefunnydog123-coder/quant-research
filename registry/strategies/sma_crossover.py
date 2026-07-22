@@ -6,7 +6,7 @@ familiar reference point that most retail traders have tried.
 """
 
 NAME = "SMA Crossover (20/100)"
-AUTHOR = "Neil Quant Labs"
+AUTHOR = "Martingale"
 KIND = "baseline"
 LOCKED_AS_OF = "2022-01-01"
 HYPOTHESIS = "When the 20-day average is above the 100-day average, the trend continues."

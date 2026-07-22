@@ -7,7 +7,7 @@ punish turnover.
 """
 
 NAME = "Mean Reversion (1d reversal)"
-AUTHOR = "Neil Quant Labs"
+AUTHOR = "Martingale"
 KIND = "baseline"
 LOCKED_AS_OF = "2022-01-01"
 HYPOTHESIS = "Yesterday's move reverses: buy after a down day, sell after an up day."

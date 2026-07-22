@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# © 2026 Neil Gilani (Neil Quant Labs) — MIT License.
+# © 2026 Neil Gilani (Martingale) — MIT License.
 # Research Note 004 — Do liquidity grabs and fair value gaps have a statistical edge?
 #
 # Reproducible: run `python experiment.py` (needs internet for yfinance).

@@ -7,7 +7,7 @@ out-of-sample on SPY after costs.
 """
 
 NAME = "Time-Series Momentum (60d)"
-AUTHOR = "Neil Quant Labs"
+AUTHOR = "Martingale"
 KIND = "baseline"
 LOCKED_AS_OF = "2022-01-01"
 HYPOTHESIS = "A positive trailing 60-day return predicts a positive next day."

@@ -1,6 +1,6 @@
 # Do Liquidity Grabs and Fair Value Gaps Have a Statistical Edge?
 
-**Neil Quant Labs · Research Note 004**
+**Martingale · Research Note 004**
 *Author: Neil Gilani · Reproducible code: [`experiment.py`](../experiment.py)*
 
 ## Abstract
@@ -141,12 +141,12 @@ price *did*; the data gives no reason to believe they predict what it will do.
 - Fama, E. (1970). *Efficient Capital Markets.*
 - Harvey, C., Liu, Y. & Zhu, H. (2016). *…and the Cross-Section of Expected
   Returns.* (On how many "discovered" signals fail to replicate.)
-- Neil Quant Labs, Research Notes 001–003.
+- Martingale, Research Notes 001–003.
 
 ---
 
 ## How to cite
 
-> Gilani, N. (2026). *Do Liquidity Grabs and Fair Value Gaps Have a Statistical Edge?* Neil Quant Labs, Research Note 004. https://github.com/hilothefunnydog123-coder/quant-research
+> Gilani, N. (2026). *Do Liquidity Grabs and Fair Value Gaps Have a Statistical Edge?* Martingale, Research Note 004. https://github.com/hilothefunnydog123-coder/quant-research
 
 © 2026 Neil Gilani. Code: MIT License. Text, figures, and findings: CC BY 4.0 (reuse with attribution).

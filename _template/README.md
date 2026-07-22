@@ -26,4 +26,4 @@ python experiment.py           # regenerates results + figures
 
 ---
 
-*Author: [Your Name] · Neil Quant Labs · Code: MIT · Text & figures: CC BY 4.0*
+*Author: [Your Name] · Martingale · Code: MIT · Text & figures: CC BY 4.0*

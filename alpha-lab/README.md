@@ -61,4 +61,4 @@ surviving the registry is the proof.
 
 ---
 
-Part of [Neil Quant Labs](../). Code: MIT. Text: CC BY 4.0.
+Part of [Martingale](../). Code: MIT. Text: CC BY 4.0.

@@ -1,6 +1,6 @@
 # Does Volatility Predict Next-Day Returns?
 
-**Neil Quant Labs · Research Note 002**
+**Martingale · Research Note 002**
 *Author: Neil Gilani · Reproducible code: [`experiment.py`](../experiment.py)*
 
 ## Abstract
@@ -102,12 +102,12 @@ market goes tomorrow; it is a measure of turbulence, not of direction.
 
 - Cont, R. (2001). *Empirical properties of asset returns: stylized facts and
   statistical issues.*
-- Neil Quant Labs, Research Note 001 — *How Backtests Lie.*
+- Martingale, Research Note 001 — *How Backtests Lie.*
 
 ---
 
 ## How to cite
 
-> Gilani, N. (2026). *Does Volatility Predict Next-Day Returns?* Neil Quant Labs, Research Note 002. https://github.com/hilothefunnydog123-coder/quant-research
+> Gilani, N. (2026). *Does Volatility Predict Next-Day Returns?* Martingale, Research Note 002. https://github.com/hilothefunnydog123-coder/quant-research
 
 © 2026 Neil Gilani. Code: MIT License. Text, figures, and findings: CC BY 4.0 (reuse with attribution).

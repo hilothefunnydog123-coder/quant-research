@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔬 Neil Quant Labs
+# 🔬 Martingale
 
 **Monthly quantitative-finance research. A question, an experiment, an honest answer.**
 
@@ -78,6 +78,6 @@ Independent quant research by **Neil Gilani** ([@hilothefunnydog123-coder](https
 
 If you reference this work, please cite it (GitHub's **"Cite this repository"** button uses [`CITATION.cff`](CITATION.cff)):
 
-> Gilani, N. (2026). *Neil Quant Labs — Quantitative Finance Research.* https://github.com/hilothefunnydog123-coder/quant-research
+> Gilani, N. (2026). *Martingale — Quantitative Finance Research.* https://github.com/hilothefunnydog123-coder/quant-research
 
 *The commit history in this repository is a timestamped, public record of authorship.*

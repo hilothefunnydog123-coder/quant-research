@@ -24,10 +24,10 @@ _Last run **2026-07-21** · data source: **real SPY daily (Yahoo)** · cost: 1&n
 
 | # | Strategy | Author | Locked | OOS window | OOS return | Sharpe | Max DD | vs B&H | Status |
 |--:|---|---|:--:|:--:|--:|--:|--:|--:|:--|
-| 1 | Buy & Hold | Neil Quant Labs | `2022-01-01` | 1139d from 2022-01-03 | +66.6% | 0.73 | -24.5% | — | _benchmark_ |
-| 2 | Time-Series Momentum (60d) | Neil Quant Labs | `2022-01-01` | 1139d from 2022-01-03 | +16.6% | 0.28 | -27.5% | -0.45 | trailed benchmark |
-| 3 | Mean Reversion (1d reversal) | Neil Quant Labs | `2022-01-01` | 1139d from 2022-01-03 | +4.2% | 0.14 | -28.4% | -0.59 | trailed benchmark |
-| 4 | SMA Crossover (20/100) | Neil Quant Labs | `2022-01-01` | 1139d from 2022-01-03 | +0.4% | 0.09 | -32.9% | -0.64 | trailed benchmark |
+| 1 | Buy & Hold | Martingale | `2022-01-01` | 1139d from 2022-01-03 | +66.6% | 0.73 | -24.5% | — | _benchmark_ |
+| 2 | Time-Series Momentum (60d) | Martingale | `2022-01-01` | 1139d from 2022-01-03 | +16.6% | 0.28 | -27.5% | -0.45 | trailed benchmark |
+| 3 | Mean Reversion (1d reversal) | Martingale | `2022-01-01` | 1139d from 2022-01-03 | +4.2% | 0.14 | -28.4% | -0.59 | trailed benchmark |
+| 4 | SMA Crossover (20/100) | Martingale | `2022-01-01` | 1139d from 2022-01-03 | +0.4% | 0.09 | -32.9% | -0.64 | trailed benchmark |
 <!--SCOREBOARD:END-->
 
 *Sharpe is the annualised return-to-risk ratio (higher is better; ~0.6 is roughly
@@ -66,4 +66,4 @@ the record is public, timestamped, and yours.
 
 ---
 
-Part of [Neil Quant Labs](../). Code: MIT. Scores and text: CC BY 4.0.
+Part of [Martingale](../). Code: MIT. Scores and text: CC BY 4.0.

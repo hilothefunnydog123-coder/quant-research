@@ -5,7 +5,7 @@ reference line, not as a contender.
 """
 
 NAME = "Buy & Hold"
-AUTHOR = "Neil Quant Labs"
+AUTHOR = "Martingale"
 KIND = "baseline"
 LOCKED_AS_OF = "2022-01-01"
 HYPOTHESIS = "Hold the index. Do nothing. This is the bar."

@@ -1,6 +1,6 @@
 # How Backtests Lie: Quantifying Lookahead Bias and Data Snooping
 
-**Neil Quant Labs · Research Note 001**
+**Martingale · Research Note 001**
 *Author: hilothefunnydog123-coder · Reproducible code: [`experiment.py`](../experiment.py)*
 
 ## Abstract
@@ -162,6 +162,6 @@ prevent and expensive to discover after the fact.
 
 ## How to cite
 
-> Gilani, N. (2026). *How Backtests Lie: Quantifying Lookahead Bias and Data Snooping.* Neil Quant Labs, Research Note 001. https://github.com/hilothefunnydog123-coder/quant-research
+> Gilani, N. (2026). *How Backtests Lie: Quantifying Lookahead Bias and Data Snooping.* Martingale, Research Note 001. https://github.com/hilothefunnydog123-coder/quant-research
 
 © 2026 Neil Gilani. The code in this repository is released under the MIT License. The text, figures, and findings of this research note are licensed **CC BY 4.0** — you may share and build on them, provided you give appropriate credit to the author.

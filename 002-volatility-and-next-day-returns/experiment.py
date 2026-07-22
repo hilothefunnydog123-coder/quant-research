@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# © 2026 Neil Gilani (Neil Quant Labs) — MIT License.
+# © 2026 Neil Gilani (Martingale) — MIT License.
 # Research Note 002 — Does volatility predict next-day returns?
 #
 # Reproducible: run `python experiment.py` (needs internet for yfinance).

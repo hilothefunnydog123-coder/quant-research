@@ -1,0 +1,309 @@
+{
+  "data_source": "synthetic (offline)",
+  "bh_oos_sharpe": 0.7772406259691229,
+  "sweeps": [
+    {
+      "name": "Trend MA window (days)",
+      "rows": [
+        {
+          "param": 20,
+          "full_sharpe": 0.7746087979018244,
+          "oos_sharpe": 0.9370674226421005,
+          "oos_maxdd": -0.2972804682467226,
+          "beats": true
+        },
+        {
+          "param": 30,
+          "full_sharpe": 0.4879085794781577,
+          "oos_sharpe": 0.9725281524615533,
+          "oos_maxdd": -0.32053573006446134,
+          "beats": true
+        },
+        {
+          "param": 40,
+          "full_sharpe": 0.37159403781468925,
+          "oos_sharpe": 0.6779554351439158,
+          "oos_maxdd": -0.32526052867007005,
+          "beats": false
+        },
+        {
+          "param": 50,
+          "full_sharpe": 0.34260420241181844,
+          "oos_sharpe": 0.5738912875558081,
+          "oos_maxdd": -0.38048979238386393,
+          "beats": false
+        },
+        {
+          "param": 60,
+          "full_sharpe": 0.3300756106411392,
+          "oos_sharpe": 0.4769753352121435,
+          "oos_maxdd": -0.3188751481770892,
+          "beats": false
+        },
+        {
+          "param": 70,
+          "full_sharpe": 0.16182880290949012,
+          "oos_sharpe": 0.48979103196353113,
+          "oos_maxdd": -0.25102420715766316,
+          "beats": false
+        },
+        {
+          "param": 80,
+          "full_sharpe": 0.1598453344306722,
+          "oos_sharpe": 0.309561375221819,
+          "oos_maxdd": -0.3670684764713604,
+          "beats": false
+        },
+        {
+          "param": 90,
+          "full_sharpe": 0.13186362556795356,
+          "oos_sharpe": 0.27082941857546555,
+          "oos_maxdd": -0.36389701228006843,
+          "beats": false
+        },
+        {
+          "param": 100,
+          "full_sharpe": 0.34207720871416847,
+          "oos_sharpe": 0.6272501392322273,
+          "oos_maxdd": -0.3113462296529528,
+          "beats": false
+        },
+        {
+          "param": 110,
+          "full_sharpe": 0.3389278199492986,
+          "oos_sharpe": 0.6579967129472432,
+          "oos_maxdd": -0.3541309232960409,
+          "beats": false
+        },
+        {
+          "param": 120,
+          "full_sharpe": 0.3400047737241436,
+          "oos_sharpe": 0.5554336133961714,
+          "oos_maxdd": -0.3635979117453342,
+          "beats": false
+        },
+        {
+          "param": 130,
+          "full_sharpe": 0.382345334558508,
+          "oos_sharpe": 0.6812067278099317,
+          "oos_maxdd": -0.31489321221649724,
+          "beats": false
+        },
+        {
+          "param": 140,
+          "full_sharpe": 0.3750696772466842,
+          "oos_sharpe": 0.7049272014522552,
+          "oos_maxdd": -0.2993633470841942,
+          "beats": false
+        },
+        {
+          "param": 150,
+          "full_sharpe": 0.28155019113356344,
+          "oos_sharpe": 0.5530651157864551,
+          "oos_maxdd": -0.35030408712847183,
+          "beats": false
+        },
+        {
+          "param": 160,
+          "full_sharpe": 0.2851035134078454,
+          "oos_sharpe": 0.6089791062705363,
+          "oos_maxdd": -0.34324913160227577,
+          "beats": false
+        },
+        {
+          "param": 170,
+          "full_sharpe": 0.26665231987222876,
+          "oos_sharpe": 0.6859673223897901,
+          "oos_maxdd": -0.3291153898154353,
+          "beats": false
+        },
+        {
+          "param": 180,
+          "full_sharpe": 0.3268174336624448,
+          "oos_sharpe": 0.6817340797116829,
+          "oos_maxdd": -0.3358877554708031,
+          "beats": false
+        },
+        {
+          "param": 190,
+          "full_sharpe": 0.40590466477735293,
+          "oos_sharpe": 0.6193255598177781,
+          "oos_maxdd": -0.3432502234749101,
+          "beats": false
+        },
+        {
+          "param": 200,
+          "full_sharpe": 0.3359668771957265,
+          "oos_sharpe": 0.5790972313026403,
+          "oos_maxdd": -0.31487269593148093,
+          "beats": false
+        },
+        {
+          "param": 210,
+          "full_sharpe": 0.3317106614789573,
+          "oos_sharpe": 0.6889307213792282,
+          "oos_maxdd": -0.3357427919267334,
+          "beats": false
+        },
+        {
+          "param": 220,
+          "full_sharpe": 0.3172046535469624,
+          "oos_sharpe": 0.6908176726887647,
+          "oos_maxdd": -0.30816766002217877,
+          "beats": false
+        },
+        {
+          "param": 230,
+          "full_sharpe": 0.29609130170665393,
+          "oos_sharpe": 0.6138303432586965,
+          "oos_maxdd": -0.30134566753702896,
+          "beats": false
+        },
+        {
+          "param": 240,
+          "full_sharpe": 0.22869768512983762,
+          "oos_sharpe": 0.5460827223108654,
+          "oos_maxdd": -0.29811293752793167,
+          "beats": false
+        },
+        {
+          "param": 250,
+          "full_sharpe": 0.32063241050525004,
+          "oos_sharpe": 0.5835925353952028,
+          "oos_maxdd": -0.29811293752793144,
+          "beats": false
+        },
+        {
+          "param": 260,
+          "full_sharpe": 0.37973752278863854,
+          "oos_sharpe": 0.6614050477131369,
+          "oos_maxdd": -0.266912705392925,
+          "beats": false
+        },
+        {
+          "param": 270,
+          "full_sharpe": 0.39876683500171556,
+          "oos_sharpe": 0.678843062951558,
+          "oos_maxdd": -0.2550176049867081,
+          "beats": false
+        },
+        {
+          "param": 280,
+          "full_sharpe": 0.3190860857827133,
+          "oos_sharpe": 0.6271104311713637,
+          "oos_maxdd": -0.29513268831071715,
+          "beats": false
+        },
+        {
+          "param": 290,
+          "full_sharpe": 0.34191396631745796,
+          "oos_sharpe": 0.6235187261211522,
+          "oos_maxdd": -0.29506219453017013,
+          "beats": false
+        },
+        {
+          "param": 300,
+          "full_sharpe": 0.39238686960738006,
+          "oos_sharpe": 0.5608798985302229,
+          "oos_maxdd": -0.30689785141674863,
+          "beats": false
+        }
+      ],
+      "frac_beating": 0.06896551724137931,
+      "peak_param": 30,
+      "verdict": "FRAGILE: the edge only shows up at a few values \u2014 likely overfit, treat with suspicion."
+    },
+    {
+      "name": "Vol-target lookback (days)",
+      "rows": [
+        {
+          "param": 5,
+          "full_sharpe": 0.8585520775864953,
+          "oos_sharpe": 0.7156946285668001,
+          "oos_maxdd": -0.28986015366766693,
+          "beats": false
+        },
+        {
+          "param": 10,
+          "full_sharpe": 1.0143089332342097,
+          "oos_sharpe": 1.0034612123816926,
+          "oos_maxdd": -0.24607298729136673,
+          "beats": true
+        },
+        {
+          "param": 15,
+          "full_sharpe": 0.9451301455635279,
+          "oos_sharpe": 0.8755814378500377,
+          "oos_maxdd": -0.2396291711482088,
+          "beats": true
+        },
+        {
+          "param": 20,
+          "full_sharpe": 0.8619830472485832,
+          "oos_sharpe": 0.8039106960784229,
+          "oos_maxdd": -0.24016951901001693,
+          "beats": true
+        },
+        {
+          "param": 25,
+          "full_sharpe": 0.8124009241962373,
+          "oos_sharpe": 0.7615522917062858,
+          "oos_maxdd": -0.24649747787141252,
+          "beats": false
+        },
+        {
+          "param": 30,
+          "full_sharpe": 0.7716372497625201,
+          "oos_sharpe": 0.7493638749322656,
+          "oos_maxdd": -0.2503069811373849,
+          "beats": false
+        },
+        {
+          "param": 35,
+          "full_sharpe": 0.755841231053696,
+          "oos_sharpe": 0.7407363033729673,
+          "oos_maxdd": -0.2549354363587506,
+          "beats": false
+        },
+        {
+          "param": 40,
+          "full_sharpe": 0.7414152541925867,
+          "oos_sharpe": 0.7223464472133604,
+          "oos_maxdd": -0.2619653400310715,
+          "beats": false
+        },
+        {
+          "param": 45,
+          "full_sharpe": 0.7375103152811701,
+          "oos_sharpe": 0.7561669331927093,
+          "oos_maxdd": -0.2638634144791885,
+          "beats": false
+        },
+        {
+          "param": 50,
+          "full_sharpe": 0.7177688325090161,
+          "oos_sharpe": 0.7302921262119628,
+          "oos_maxdd": -0.26570525022389935,
+          "beats": false
+        },
+        {
+          "param": 55,
+          "full_sharpe": 0.6919426385341709,
+          "oos_sharpe": 0.6911036255771711,
+          "oos_maxdd": -0.26921268334321546,
+          "beats": false
+        },
+        {
+          "param": 60,
+          "full_sharpe": 0.6752579896240367,
+          "oos_sharpe": 0.6858609521841426,
+          "oos_maxdd": -0.2712023774701152,
+          "beats": false
+        }
+      ],
+      "frac_beating": 0.25,
+      "peak_param": 10,
+      "verdict": "FRAGILE: the edge only shows up at a few values \u2014 likely overfit, treat with suspicion."
+    }
+  ]
+}

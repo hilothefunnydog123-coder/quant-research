@@ -1,6 +1,6 @@
 # Momentum vs. Mean Reversion, Across Regimes, After Costs
 
-**Neil Quant Labs · Research Note 003**
+**Martingale · Research Note 003**
 *Author: Neil Gilani · Reproducible code: [`experiment.py`](../experiment.py)*
 
 ## Abstract
@@ -176,12 +176,12 @@ strategy that trades the most keeps the least.
 - Jegadeesh, N. (1990). *Evidence of Predictable Behavior of Security Returns.*
   (Short-term reversal / mean reversion.)
 - Moskowitz, T., Ooi, Y. H. & Pedersen, L. (2012). *Time Series Momentum.*
-- Neil Quant Labs, Research Note 001 — *How Backtests Lie.*
+- Martingale, Research Note 001 — *How Backtests Lie.*
 
 ---
 
 ## How to cite
 
-> Gilani, N. (2026). *Momentum vs. Mean Reversion, Across Regimes, After Costs.* Neil Quant Labs, Research Note 003. https://github.com/hilothefunnydog123-coder/quant-research
+> Gilani, N. (2026). *Momentum vs. Mean Reversion, Across Regimes, After Costs.* Martingale, Research Note 003. https://github.com/hilothefunnydog123-coder/quant-research
 
 © 2026 Neil Gilani. Code: MIT License. Text, figures, and findings: CC BY 4.0 (reuse with attribution).

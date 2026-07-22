@@ -5,7 +5,7 @@
   "entries": [
     {
       "name": "Buy & Hold",
-      "author": "Neil Quant Labs",
+      "author": "Martingale",
       "kind": "baseline",
       "locked_as_of": "2022-01-01",
       "hypothesis": "Hold the index. Do nothing. This is the bar.",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Mean Reversion (1d reversal)",
-      "author": "Neil Quant Labs",
+      "author": "Martingale",
       "kind": "baseline",
       "locked_as_of": "2022-01-01",
       "hypothesis": "Yesterday's move reverses: buy after a down day, sell after an up day.",
@@ -37,7 +37,7 @@
     },
     {
       "name": "SMA Crossover (20/100)",
-      "author": "Neil Quant Labs",
+      "author": "Martingale",
       "kind": "baseline",
       "locked_as_of": "2022-01-01",
       "hypothesis": "When the 20-day average is above the 100-day average, the trend continues.",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Time-Series Momentum (60d)",
-      "author": "Neil Quant Labs",
+      "author": "Martingale",
       "kind": "baseline",
       "locked_as_of": "2022-01-01",
       "hypothesis": "A positive trailing 60-day return predicts a positive next day.",

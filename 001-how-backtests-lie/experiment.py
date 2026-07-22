@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# © 2026 Neil Gilani (Neil Quant Labs) — MIT License.
+# © 2026 Neil Gilani (Martingale) — MIT License.
 # Part of quant-research: https://github.com/hilothefunnydog123-coder/quant-research
 """How Backtests Lie — reproducible experiments.
 
