@@ -12,11 +12,11 @@
       "file": "buy_and_hold.py",
       "oos_start": "2022-01-03",
       "oos_days": 1147,
-      "oos_return": 0.6541889041320121,
-      "sharpe": 0.7180937589257619,
-      "max_drawdown": -0.2450394342570289,
-      "benchmark_return": 0.6543543950093891,
-      "benchmark_sharpe": 0.7182194937498202,
+      "oos_return": 0.6617970357552838,
+      "sharpe": 0.7237662223681249,
+      "max_drawdown": -0.24503945088702483,
+      "benchmark_return": 0.6619632877769241,
+      "benchmark_sharpe": 0.7238919446616533,
       "status": "benchmark"
     },
     {
@@ -28,11 +28,11 @@
       "file": "mean_reversion.py",
       "oos_start": "2022-01-03",
       "oos_days": 1147,
-      "oos_return": 0.05754208968792729,
-      "sharpe": 0.15716163215376056,
-      "max_drawdown": -0.2835634577868801,
-      "benchmark_return": 0.6543543950093891,
-      "benchmark_sharpe": 0.7182194937498202,
+      "oos_return": 0.05264373757776908,
+      "sharpe": 0.15135645364719902,
+      "max_drawdown": -0.28356616693852943,
+      "benchmark_return": 0.6619632877769241,
+      "benchmark_sharpe": 0.7238919446616533,
       "status": "trailed benchmark"
     },
     {
@@ -44,11 +44,11 @@
       "file": "sma_crossover.py",
       "oos_start": "2022-01-03",
       "oos_days": 1147,
-      "oos_return": -0.002583435112861965,
-      "sharpe": 0.08497811941365162,
-      "max_drawdown": -0.32892540645992174,
-      "benchmark_return": 0.6543543950093891,
-      "benchmark_sharpe": 0.7182194937498202,
+      "oos_return": 0.0020046388890944122,
+      "sharpe": 0.09073603181317408,
+      "max_drawdown": -0.32892505331821886,
+      "benchmark_return": 0.6619632877769241,
+      "benchmark_sharpe": 0.7238919446616533,
       "status": "trailed benchmark"
     },
     {
@@ -60,11 +60,11 @@
       "file": "ts_momentum.py",
       "oos_start": "2022-01-03",
       "oos_days": 1147,
-      "oos_return": 0.15786565529014962,
-      "sharpe": 0.27170588551390057,
-      "max_drawdown": -0.27509338685879625,
-      "benchmark_return": 0.6543543950093891,
-      "benchmark_sharpe": 0.7182194937498202,
+      "oos_return": 0.1631892773133583,
+      "sharpe": 0.2774332392044293,
+      "max_drawdown": -0.27509383549753386,
+      "benchmark_return": 0.6619632877769241,
+      "benchmark_sharpe": 0.7238919446616533,
       "status": "trailed benchmark"
     }
   ]
