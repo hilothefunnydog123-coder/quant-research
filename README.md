@@ -40,7 +40,8 @@ See [`METHODOLOGY.md`](METHODOLOGY.md) for the full checklist. In short, every e
 | **002** | Does realized volatility predict next-day returns? | Across 2,881 days of SPY, today's volatility → tomorrow's return correlation is **+0.035** (R² ≈ 0.1%, p ≈ 0.06) — **no meaningful directional prediction** | [paper](002-volatility-and-next-day-returns/paper/paper.md) · [code](002-volatility-and-next-day-returns/) |
 | **003** | Momentum vs. mean reversion across regimes, after costs? | Over 4,916 days of SPY, **neither beats buy-and-hold** (Sharpe 0.63) after costs — but each is a regime bet: momentum leads in bull markets, mean reversion earns **1.07** in bear markets, then its ~6× turnover lets 5bp costs turn it **negative** | [📄 PDF](003-momentum-vs-mean-reversion/paper/paper.pdf) · [code](003-momentum-vs-mean-reversion/) |
 | **004** | How effective are liquidity-grab / FVG setups, statistically? | Across 2,903 days of SPY, **no edge**: at 1 day nothing is significant; the 5-day "significant" results are just market drift, and the *bearish* patterns are followed by the *largest positive* moves — the opposite of the claim | [📄 PDF](004-liquidity-grabs-and-fvg/paper/paper.pdf) · [code](004-liquidity-grabs-and-fvg/) |
-| 005 | *Where do SPY's returns actually come from — overnight vs. intraday?* | *planned* | — |
+| **005** | Where do returns actually come from — overnight vs. intraday? | Across 5,030 days of the NASDAQ Composite, the **entire** index gain accrued overnight (**+917%**) while the intraday session **lost 70%** — but break-even cost is **2.46bp/side**, +274.5% of it came from 1999–2000, and by 2009–2018 the sessions are **tied**. Separately: a widely used S&P 500 feed answers this **backwards** because its opens are stale | [📄 PDF](005-overnight-vs-intraday/paper/paper.pdf) · [code](005-overnight-vs-intraday/) |
+| 006 | *Do stop-losses actually improve risk-adjusted returns?* | *planned* | — |
 
 ## The pipeline (one note per month)
 
