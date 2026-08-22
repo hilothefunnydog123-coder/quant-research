@@ -27,7 +27,7 @@ _Last run **2026-08-21** · data source: **real SPY daily (Yahoo)** · cost: 1&n
 | 1 | Buy & Hold | Martingale | `2022-01-01` | 1162d from 2022-01-03 | +70.3% | 0.75 | -24.5% | — | _benchmark_ |
 | 2 | Time-Series Momentum (60d) | Martingale | `2022-01-01` | 1162d from 2022-01-03 | +19.2% | 0.31 | -27.5% | -0.44 | trailed benchmark |
 | 3 | SMA Crossover (20/100) | Martingale | `2022-01-01` | 1162d from 2022-01-03 | +2.7% | 0.12 | -32.9% | -0.63 | trailed benchmark |
-| 4 | Mean Reversion (1d reversal) | Martingale | `2022-01-01` | 1162d from 2022-01-03 | +2.1% | 0.11 | -28.4% | -0.63 | trailed benchmark |
+| 4 | Mean Reversion (1d reversal) | Martingale | `2022-01-01` | 1162d from 2022-01-03 | +2.2% | 0.11 | -28.4% | -0.63 | trailed benchmark |
 <!--SCOREBOARD:END-->
 
 *Sharpe is the annualised return-to-risk ratio (higher is better; ~0.6 is roughly
