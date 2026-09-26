@@ -1,4 +1,5 @@
-__pycache__/
 *.pyc
-paper.html
 .pytest_cache/
+__pycache__/
+data/
+paper.html
